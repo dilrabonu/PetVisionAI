@@ -19,3 +19,4 @@ def load_config(path: Path = CONFIG_PATH) -> dict:
     return cfg
 
 COFIG = load_config()
+
