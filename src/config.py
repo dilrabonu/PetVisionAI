@@ -17,3 +17,5 @@ def load_config(path: Path = CONFIG_PATH) -> dict:
         cfg = yaml.safe_load(f)
     cfg["train"]["device"] = _resolve_device(cfg["train"]["device"])
     return cfg
+
+COFIG = load_config()
